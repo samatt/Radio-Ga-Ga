@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><title>Radio-Ga-Ga-Week 3</title><meta charset='utf-8'><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href='big.css' rel='stylesheet' type='text/css' />
+<script src='big.js'></script>
+<script src='body.js'></script>
+<script src='jquery-2.2.0.min.js'></script>
+<style>
+  .white{
+    color: white;
+  }
+  /*img{
+    max-width: 480px;
+    max-width: 640px;
+  }*/
+  /*div { font-size: 10vmin; }*/
+</style>
+<script >
+  function addImage(data){
+
+    return "<img src="+data+" />"
+  }
+  function addSlide(data){
+    
+    var el = data.class?"<div class="+data.class:"<div";
+    if (data.img ){
+      return el+" data-comment = \""+data.comment+"\">"+data.text+addImage(data.img)+"</div>";
+    }
+    if (data.background ){
+      return el+" data-comment = \""+data.comment+"\">"+addImage(data.background)+data.text+"</div>";
+    }
+
+    return  el+" data-comment = \"" + data.comment+"\">"+data.text+"</div>";
+  }
+  
+  $(document).ready(function(){
+    if(body){
+      for(slide in body){ $('body').append(addSlide(body[slide]));}
+    }
+  });
+
+    
+
+</script>
+</head>
+<body>
+<div data-comment="" tabindex="0" style="display: inline; font-size: 1px; margin-top: -351px;"> <br><br><br><br> What is a <em>wave</em> ? <br><br><br><br><img src="img/ripple.jpg"></div>
+</body>
+</html>
