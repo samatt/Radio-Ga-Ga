@@ -22,13 +22,13 @@
     
     var el = data.class?"<div class="+data.class:"<div";
     if (data.img ){
-      return el+" data-comment = \""+data.comment+"\">"+data.text+addImage(data.img)+"</div>";
+      return "<div data-comment = \""+data.comment+"\">"+data.text+addImage(data.img)+"</div>";
     }
     if (data.background ){
-      return el+" data-comment = \""+data.comment+"\">"+addImage(data.background)+data.text+"</div>";
+      return "<div data-comment = \""+data.comment+"\">"+addImage(data.background)+data.text+"</div>";
     }
 
-    return  el+" data-comment = \"" + data.comment+"\">"+data.text+"</div>";
+    return  "<div data-comment = \"" + data.comment+"\">"+data.text+"</div>";
   }
   
   $(document).ready(function(){

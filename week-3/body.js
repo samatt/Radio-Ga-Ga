@@ -50,12 +50,34 @@ var body = {
 	},
 	'13':{
 		text:' The <em>Electromagentic Spectrum</em> </br>',
-		comment:'',
-		class:'white',
+		comment:'dsadas',
 		img:'img/electromagnetic_spectrum_small.png'
 	},
 	'14':{
-
+		text:' <h2>Modulation</h2>',
+		comment:'sdadas',
+	},
+	'15':{
+		text:' Adding one signal to another </br>',
+		img:'img/modulation.gif',
+	},
+	'16':{
+		text:'Lets watch another <a href="https://www.youtube.com/watch?v=D65KXwfDs3s" >video</a>'
+	},
+	'17':{
+		text:'So how does this work for the digital world?'
+	},
+	'18':{
+		text :'<em>FSK</em>  </br> Frequency Shift Keying </br> <em>ASK</em>  </br>  Amplitude Shift Keying </br> <em>PSK</em> </br>  Phase Shift Keying.',
+	},
+	'19':{
+		text:"These are the digital equivalent of <em>FM</em> and <em>AM</em>",
+		img:'img/digimod.jpg'
+	},
+	'20':{
+		text:"Why should we <em>care</em>?"
+	},
+	'21':{
+		text:'Because we can learn a lot from that <a href="https://youtu.be/K2ZJDZVeheU?t=12m20s""> info</a>'
 	}
-	
 }
